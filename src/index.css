@@ -1,0 +1,91 @@
+/* Restrained Bootstrap palette from the PRD */
+:root {
+  --sms-primary: #0d6efd;
+  --sms-bg: #f8f9fa;
+  --sms-surface: #ffffff;
+  --sms-text: #212529;
+  --sms-muted: #6c757d;
+  --sms-border: #dee2e6;
+  --sms-success: #198754;
+  --sms-danger: #dc3545;
+}
+
+body {
+  background-color: var(--sms-bg);
+  color: var(--sms-text);
+}
+
+.page-container {
+  max-width: 1140px;
+}
+
+.content-card {
+  background-color: var(--sms-surface);
+  border: 1px solid var(--sms-border);
+  border-radius: 0.375rem;
+  padding: 1.25rem;
+}
+
+.table > :not(caption) > * > * {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.table thead th {
+  white-space: nowrap;
+  color: var(--sms-muted);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.text-muted-sms {
+  color: var(--sms-muted);
+}
+
+.student-thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--sms-border);
+  flex-shrink: 0;
+}
+
+.student-thumb-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  color: var(--sms-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.student-thumb-lg {
+  width: 96px;
+  height: 96px;
+  font-size: 1.75rem;
+}
+
+.login-card {
+  max-width: 420px;
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+  outline: 2px solid var(--sms-primary);
+  outline-offset: 2px;
+}
+
+.modal-backdrop-sms {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+}
+.modal.show.d-block {
+  z-index: 1055;
+}
