@@ -1,18 +1,6 @@
 {
   "students": [
     {
-      "id": "student-001",
-      "name": "Aarav Patel",
-      "rollNumber": "101",
-      "class": "BBA",
-      "phone": "9827009275",
-      "email": "aarav.patel@example.com",
-      "age": 18,
-      "grade": "B",
-      "marks": 65,
-      "image": ""
-    },
-    {
       "id": "student-002",
       "name": "Diya Shah",
       "rollNumber": "102",
